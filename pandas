@@ -1,0 +1,94 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+import statsmodels as stat
+import seaborn as sbrn
+import pandas as pds 
+import matplotlib.pyplot as mplt
+import numpy as np
+
+dtst = pds.read_csv('/Users/nan/Documents/fichier.csv')
+
+"""
+print(dtst[['Region','Country','Unit Cost']])
+print(dtst['Region'].head(100))
+print(dtst['Unit Cost'].tail(100))
+print(dtst['Unit Cost'].sort_values())
+
+
+
+dtst.hist(column='Unit Cost')
+dtst.hist(column='Total Cost')
+
+
+dtst.boxplot(column='Unit Cost',by='Region')
+
+dtst['Unit Cost'].value_counts().plot.pie()
+
+dtst.hist(column='Total Cost')
+
+dtst['Region'].value_counts().plot.pie()
+
+dtst.hist(column='Total Cost')
+
+dtst['Order Priority'].value_counts().plot.pie()
+
+dtst.hist(column='Total Cost')
+
+
+
+
+x = [0, 1, 2]
+y = [1, 0, 2]
+mplt.plot(x, y)
+mplt.show()
+mplt.close()
+
+
+
+x = [0, 1, 0]
+y = [0, 1, 2]
+
+x1 = [0, 2, 0]
+y1 = [2, 1, 0]
+
+x2 = [0, 1, 2]
+y2 = [0, 1, 2]
+mplt.plot(x, y)         
+mplt.plot(x1, y1)
+mplt.plot(x2, y2)
+mplt.show()
+mplt.close()
+
+
+
+x = [0, 1, 2]
+y = [1, 0, 2]
+mplt.plot(x, y)
+mplt.show()
+mplt.close()
+
+
+
+x = [0, 1, 0]
+y = [0, 1, 2]
+
+x1 = [0, 2, 0]
+y1 = [2, 1, 0]
+
+x2 = [0, 1, 2]
+y2 = [0, 1, 2]
+mplt.plot(x, y)         
+mplt.plot(x1, y1)
+mplt.plot(x2, y2)
+mplt.show()
+mplt.close()
+
+"""
+
+
+
+print(dtst.loc[(dtst['Unit Cost'] > 45) & (dtst['Country'] == "Canada") & (dtst['Region'] == "North America")])
